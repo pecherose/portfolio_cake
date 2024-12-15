@@ -1,0 +1,466 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0 auto 0 auto;
+  font-family: "Kalam","Noto Sans JP" ,Helvetica Neue,
+  Arial,
+  "Hiragino Kaku Gothic ProN",
+  "Hiragino Sans",
+  Meiryo,
+  sans-serif;
+  font-size: 18px;
+}
+
+.wrap {
+  overflow: hidden;
+}
+@font-face {
+  font-family: 'Kalam';
+  src: url("Cake/font/Kalam")
+}
+
+p {
+  margin: 0;
+}
+
+/* ヘッダー */
+header {
+align-items: center;
+margin: 0;
+background-size:cover;
+background-image: url("image/headerbg.png");}
+
+.header-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.header-inner a {
+  font-family: 'Kalam';
+  color: #652c33;
+  text-decoration: none;
+}
+
+.header-innerl {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px 0 20px 40px;
+}
+
+h1 {
+  padding-left: 20px;
+  font-size: 30px;
+}
+
+.header-inner2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding-left: 400px;
+}
+
+/* ナビゲーションのレイアウト */
+#nav-pc {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+}
+
+#nav-pc ul {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+}
+
+#nav-pc li {
+  font-size: 35px;
+  list-style: none;
+  margin: auto 70px;
+}
+
+/* ナビゲーションのリンクの装飾設定 */
+#nav-pc a {
+  text-decoration: none;
+}
+
+/* スマホ用ナビを非表示 */
+#nav-sp,
+#menu-sp {
+  display: none;
+}
+
+#nav-pc a:hover {
+  text-decoration: underline;
+}
+
+/* メインビジュアル */
+.mv img {
+    margin: 0 auto;
+    width: 100%;
+}
+  
+/* Concept */
+.concept {
+  margin-top: 70px;
+  text-align: center;
+  color: #652c33;
+  margin: 0 auto 0 auto;
+}
+
+.concept-title {
+  margin-top: 40px;
+  font-size: 30px;
+}
+
+.concept-shopname {
+  margin-top: 70px;
+  font-size: 25px;
+}
+
+.concept-description {
+  position: relative;/*親要素にrelative*/
+  margin: 10px;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.conceptr {
+  position: absolute;/*重ねたい子要素にabsolute*/
+  align-items: center;
+  top: 50px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  max-width: 300px;
+}
+
+
+.concepttr p {
+  position: absolute;/*重ねたい子要素にabsolute*/
+  text-align: center;
+  align-items: center;
+  top: 20px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.conceptflower {
+  position: absolute;/*重ねたい子要素にabsolute*/
+  text-align: center;
+  align-items: center;
+  top: 35%;
+  left: 70%;
+  max-width: 90px;
+}
+
+.concept-morebt {
+  align-items: center;
+  margin-top: 190px;
+  font-size: 20px;
+}
+
+.concept-morebt p {
+  text-align: center;
+  background-color: #f3d2dc;
+  padding: 10px 10px;
+  margin: auto;
+  width: 150px;
+}
+
+/* Menuセクション */
+.menu {
+  position: relative;
+  text-align: center;
+  color: #652c33;
+  background-color: #F0F9FB;
+  margin: 7% auto 0 auto;
+  padding-bottom: 20px;
+}
+
+.menu-title {
+  padding-top: 40px;
+  font-size: 30px;
+}
+
+.menu-inner {
+  display: flex;
+  justify-content: center;
+  margin: 30px 10px;
+}
+
+
+/* 画像と説明文 */
+.menup {
+  align-items: center;
+  margin: 0 50px;
+  padding-bottom: 55px;
+}
+
+.menup img {
+  position: relative;
+  width: 100%;
+}
+
+.menup p {
+  align-items: center;
+  text-align: center;
+  padding: 10px 10px;
+  margin-top: -120px;
+  background-color: #ffffff;
+  opacity: 0.7;
+  font-size: 30px;
+  width: 100%;
+}
+
+.menup a {
+color: #652c33;
+text-decoration: none;
+}
+
+/* SNSセクション */
+.sns {
+  position: relative;
+  margin: 100px auto 180px auto;
+  text-align: center;
+  color: #652c33;
+}
+
+.sns-title {
+  padding-top: 40px;
+  font-size: 30px;
+}
+
+.sns-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px auto;
+  max-width: 1080px;
+}
+
+.sns-contents {
+  margin: 30px auto;
+}
+
+.sns-contentsf {
+  margin: auto;
+}
+
+/* 画像 */
+.snsp {
+  position: relative;
+  margin: 30px;
+}
+
+.snsp-in {
+  display: none;
+}
+
+/* フッター */
+footer {
+  display: block;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: 140px;
+  background-image: url("image/headerbg.png");
+  margin: 0 auto 0 auto;
+}
+
+.footer-hight {
+  display: block;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer-ps {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.footer-ps a {
+  color: #652c33;
+  text-decoration: none;
+}
+
+.footer-copy {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  color: #652c33;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 415px) {
+  /* sns用アイコン非表示 */
+  .sns-in {
+    display: none;
+}
+}
+  /*====================
+   スマートフォン用のスタイル
+  =====================*/
+/* 画面幅が414px以下のとき */
+@media screen and (max-width: 414px) {
+  /* スマートフォン用のスタイルを指定する */
+  /* PC用ナビゲーション非表示 */
+  #nav-pc {
+    display: none;
+}
+
+/* ヘッダー */
+header {
+  align-items: center;
+  margin: 0;
+  background-size:cover;
+  background-image: url("image/headerbg.png");
+}
+
+/* ヘッダー左ロゴサイズ */
+.header-innerl img {
+  width: 70%;
+}
+
+/* ハンバーガーメニュー */
+#menu-sp {
+  display: block;
+  background-color: transparent;
+  float: right;
+  padding: 20px;
+  border: none;
+}
+
+/* スマホ用ナビゲーションの表示切替*/
+/* 初期状態、レイアウトと非表示設定 */
+#nav-sp {
+  position: fixed;
+  left: 180px;
+  top: 0;
+  height: 50%;
+  width: 60%;
+  display: none;
+  z-index: 100;
+}
+
+/* ×ボタン */
+#close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border: none;
+  z-index: 1;
+  background-color: transparent;
+}
+
+#nav-sp nav ul {
+  padding-left: 0;
+}
+
+#nav-sp nav li {
+  list-style: none;
+}
+
+  /* ナビゲーションのリンクの装飾設定 */
+  #nav-sp nav a {
+    display: block;
+    color: #652c33;
+  }
+
+  #nav-sp nav a:hover {
+    text-decoration: underline;
+  }
+
+  #nav-sp .menubt {
+    text-decoration: none;
+    height: 60px;
+    font-size: 16px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding: 20px 20px;
+  }
+
+  nav ul {
+    background-color: #F0F9FB;
+  }
+
+  /* MVセクション */
+  .mvpc {
+    display: none;
+  }
+
+  .main_1sp {
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    padding-top: 20px;
+  }
+
+    /* Conceptセクション */
+  .concepttr p {
+    font-size: 16px;
+  }
+
+  img.conceptflower {
+    width: 50px;
+    margin-top: 25px;
+    margin-left: 75px;
+  }
+    /* Menuセクション */
+  .menu {
+    align-items: center;
+  }
+
+  .menu-inner {
+    flex-direction: column;
+    align-items: center;    
+  }
+
+  .menup {
+    margin-bottom: 30px;
+  }
+
+  .menu p {
+    text-align: center;
+    font-size: 25px;
+  }
+
+/*SNSセクション */
+.sns-title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.sns-in {
+  width: 200px;
+  margin-top: 40px;
+}
+
+.sns-inner {
+  display: none;
+}
+
+/* footerセクション */
+.footer-ps {
+  font-size: 16px;
+}
+
+}
