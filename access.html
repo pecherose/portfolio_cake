@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>pâtisserie sucre</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="からだに優しいお砂糖で作るお菓子で幸せに">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- slickの読み込み -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  </head>
+  <body>
+    <div class="wrap">
+    <header>
+    <!-- ヘッダー左logo -->
+     <div class="header-inner">
+      <div class="header-innerl">
+       <a href="index.html" id="nonamelogo">
+        <img src="image/logo.png" alt="トップページに戻る">
+      </a>
+      </div>
+       <!-- ナビゲーションメニュー -->
+        <nav id="nav-pc">
+          <ul class="header-menu">
+            <li><a href="concept.html">Concept</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="access.html">Access</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- スマホ用メニューボタン -->
+        <button id="menu-sp" onclick="document.getElementById('nav-sp').style.display = 'block'">
+          <img src="image/hangar.png" alt="ナビゲーションを開く">
+        </button>
+        <!-- スマホ用ナビゲーション -->
+        <div id="nav-sp">
+          <button id="close" onclick="document.getElementById('nav-sp').style.display = 'none'">
+            <img src="image/cross.png" alt="ナビゲーションを閉じる">
+          </button>
+  
+          <nav>
+            <ul>
+              <li><a class="menubt" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'">Home</a></li>
+              <li><a class="menubt" href="concept.html" onclick="document.getElementById('nav-sp').style.display = 'none'">Concept</a></li>
+              <li><a class="menubt" href="menu.html" onclick="document.getElementById('nav-sp').style.display = 'none'">Menu</a></li>
+              <li><a class="menubt" href="access.html" onclick="document.getElementById('nav-sp').style.display = 'none'">Access</a></li>
+              <li><a class="menubt" href="contact.html" onclick="document.getElementById('nav-sp').style.display = 'none'">Contact</a></li>
+            </ul>
+          </nav>
+     </div>
+     </header>
+    <main>
+      <article>
+        <!-- Accessセクション -->
+        <section class="accesspage">
+        <div class="accesspage_title2">
+          <a>～ Access ～</a>
+        </div>
+        <div class="access_shop">
+          <img src="image/Access/shop.png" alt=patissier class="shop_p"> 
+        </div>
+        <div class="accesspage-shde">
+        <div class="accesspage-shopname">
+          <a>pâtisserie sucre</a>    
+        </div>
+        <div class="accesspage-description">
+          <div class="des_l">
+            <p>住所<br/>
+               TEL <br/>
+              e-mail<br/>
+              営業時間</p> 
+         </div>
+          <div class="des_r">
+            <p class="des_rr">〒106-0047<br/>
+            東京都港区南麻布1-23-4号</p>
+              03-1234-5678<br/>
+              patisserise@sucre.com<br/>
+              10:00~19:00【定休日 火曜・水曜】</p> 
+         </div>
+        </div>
+      </div>
+        </section>
+        <section class="accesspage_map">
+          <div class="accesspage_title2">
+            <a>～ map ～</a>
+          </div>
+          <div class="map-inner">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.0848170423797!2d139.73086382623012!3d35.650281881672775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ba0c976778f%3A0x488e33cecda4e334!2z44CSMTA2LTAwNDcg5p2x5Lqs6YO95riv5Yy65Y2X6bq75biD77yR5LiB55uu77yS77yT!5e0!3m2!1sja!2sjp!4v1734962969302!5m2!1sja!2sjp" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </section>
+   </main>
+     <!-- フッター -->
+    <footer>
+      <div class="footer-hight">
+       <div class="footer-ps">
+         <!-- プライバシーポリシー/サイトマップ -->
+         <a href="privacypolicy.html" class="shopname">プライバシーポリシー</a> <a href="sitemap.html" class="shopname">｜サイトマップ</a>
+       </div>
+       <div class="footer-copy">
+            <p>🄫&nbsp;&nbsp;2024&nbsp;pâtisserie sucre</p>
+       </div>
+      </div>
+   </footer>
+  </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- slickの読み込み -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="script.js"></script>
+  </body>
+</html>
